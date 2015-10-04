@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.4.RELEASE</version>
-    </parent>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.2.6.RELEASE</version>
+	</parent>
 
-    <groupId>org.sandbox.spring</groupId>
-    <artifactId>spring-boot-sandbox</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+	<groupId>org.sandbox.spring</groupId>
+	<artifactId>spring-boot-sandbox</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 
-    <prerequisites>
-        <maven>3.0.2</maven>
-    </prerequisites>
+	<prerequisites>
+		<maven>3.0.2</maven>
+	</prerequisites>
 
-    <properties>
-        <java.version>1.7</java.version>        
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <commons-lang3.version>3.4</commons-lang3.version>
-    </properties>
-    
-    <issueManagement>
-        <system>GitHub Issues</system>
-        <url>https://github.com/adefanti/spring-boot-sandbox/issues</url>
-    </issueManagement>
-    
-    <!-- GitHub SCM -->
-    <scm>
-        <url>https://github.com/adefanti/spring-boot-sandbox</url>
-        <connection>scm:git:ssh://git@github.com/adefanti/spring-boot-sandbox.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/adefanti/spring-boot-sandbox.git</developerConnection>
-    </scm>
+	<properties>
+		<java.version>1.7</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<guava.version>18.0</guava.version>
+	</properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-            <exclusions>
-                <!-- remove Apache Tomcat web server -->
-                <exclusion>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-starter-tomcat</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <!-- add Undertow web server -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-undertow</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons-lang3.version}</version>
-        </dependency>
-    </dependencies>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/adefanti/spring-boot-sandbox/issues</url>
+	</issueManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+	<!-- GitHub SCM -->
+	<scm>
+		<url>https://github.com/adefanti/spring-boot-sandbox</url>
+		<connection>scm:git:ssh://git@github.com/adefanti/spring-boot-sandbox.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/adefanti/spring-boot-sandbox.git</developerConnection>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+			<exclusions>
+				<!-- remove Apache Tomcat web server -->
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-tomcat</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- add Undertow web server -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-undertow</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
