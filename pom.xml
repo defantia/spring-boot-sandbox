@@ -14,14 +14,14 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<prerequisites>
-		<maven>3.0.2</maven>
+		<maven>3.2.1</maven>
 	</prerequisites>
 
 	<properties>
 		<java.version>1.7</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<guava.version>18.0</guava.version>
+		<guava.version>19.0</guava.version>
 	</properties>
 
 	<issueManagement>
