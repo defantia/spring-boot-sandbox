@@ -1,2 +1,2 @@
-# spring-boot-sandbox ![CI Status](https://travis-ci.org/adefanti/spring-boot-sandbox.svg?branch=main)
+# spring-boot-sandbox ![CI Status](https://github.com/adefanti/spring-boot-sandbox/actions/workflows/maven.yml/badge.svg)
 Sandbox to work on Spring Boot
